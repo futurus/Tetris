@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris</title>
+	<script src="scripts/jquery-2.10.min.js"></script>
+    <script src="scripts/tetris.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <div id="message"></div>SCORE:
+                <div id="score"></div>
+                <table>
+                    <tr>
+                        <td>I</td>
+                        <td>J</td>
+                        <td>L</td>
+                        <td>O</td>
+                        <td>S</td>
+                        <td>T</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="I">0</div>
+                        </td>
+                        <td>
+                            <div id="J">0</div>
+                        </td>
+                        <td>
+                            <div id="L">0</div>
+                        </td>
+                        <td>
+                            <div id="O">0</div>
+                        </td>
+                        <td>
+                            <div id="S">0</div>
+                        </td>
+                        <td>
+                            <div id="T">0</div>
+                        </td>
+                        <td>
+                            <div id="Z">0</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <canvas id="the-game" width="240" height="480">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <canvas id="nextPiece" width="120" height="120">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
