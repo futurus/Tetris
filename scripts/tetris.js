@@ -509,9 +509,6 @@ addEventListener("keydown", function (e) {
 
 var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
 
-// Initiation
-game.start();
-
 function loop() {
     if (game.over === false) {
 
@@ -571,5 +568,15 @@ function loop() {
         $('#message').text("GAME OVER!");
     }
 }
+
+
+
 // do we really need requestAnimationFrame?
-loop();
+$(function () {
+	// Initiation
+	game.start();
+
+    $('#app-start').click(function () {
+		loop();
+	});
+});
